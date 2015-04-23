@@ -80,7 +80,7 @@ class HipchatController < ApplicationController
 		end
 
 		def get_ticket_activities(id,domain,api_key)
-			site = RestClient::Resource.new("#{domain}/helpdesk/tickets/activities/#{id}.json",api_key,"X")
+			site = RestClient::Resource.new("#{domain}/helpdesk/tickets/#{id}/activities.json",api_key,"X")
 			response = site.get(:content_type=>"application/json")
 			return JSON.parse(response.body)
 		end
