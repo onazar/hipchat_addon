@@ -1,17 +1,7 @@
-# source :gemcutter 
-source 'https://rubygems.org'
-ruby "1.9.3"
-gem 'rails', '~> 2.3.18' 
-gem 'yaml_record'
+gem 'rails', '=3.2.22'
+#gem 'yaml_record'
+gem 'yaml_record', :git => "git@github.com:nicotaing/yaml_record.git", :branch => "rails3"
 gem 'encryptor'
 gem 'rest-client'
+gem 'pg'
 
-group :development do 
-	# bundler requires these gems in development 
-	# gem 'rails-footnotes' 
-end  
-group :test do 
-	# bundler requires these gems while running tests 
-	# gem 'rspec' 
-	# gem 'faker' 
-end
