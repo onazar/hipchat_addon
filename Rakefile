@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-HipchatFreshdeskAddon::Application.load_tasks
+HipchatAddon::Application.load_tasks

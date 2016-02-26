@@ -1,4 +1,4 @@
-HipchatFreshdeskAddon::Application.configure do
+HipchatAddon::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -34,7 +34,7 @@ HipchatFreshdeskAddon::Application.configure do
   config.assets.raise_runtime_errors = true
 
   #ENV["DOMAIN"] = "http://sathishtest.ngrok.com"
-  ENV["DOMAIN"] = "http://tddium.lvh.me:3000"
+  ENV["DOMAIN"] = "http://ec2-54-164-6-135.compute-1.amazonaws.com"
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true

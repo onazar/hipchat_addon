@@ -24,16 +24,16 @@ class HipchatController < ApplicationController
 	private
 		def capabilities_descriptor
 			capabilities = { 
-				"name" => "Freshdesk Hipchat Add-On", 
-				"description"=> "Freshdesk Hipchat integration", 
-				"key"=> "Freshdesk.hipchat.addon", 
+				"name" => "Onazar Hipchat Add-On",
+				"description"=> "Onazar Hipchat integration",
+				"key"=> "onazar.hipchat.addon",
 				"vendor" => {
-			    						"url" => "http://freshdesk.com",
-			    						"name" => "Freshdesk"
+			    						"url" => "http://ec2-54-164-6-135.compute-1.amazonaws.com",
+			    						"name" => "onazar"
 			    					},
 				"links" => {
-			    						"homepage" => "http://freshdesk.com",
-			    						"self" => "http://freshdesk.com"
+			    						"homepage" => "http://ec2-54-164-6-135.compute-1.amazonaws.com",
+			    						"self" => "http://ec2-54-164-6-135.compute-1.amazonaws.com"
 		  							},
 			  "capabilities" => {
 			  	"oauth2Provider" => { 
@@ -45,7 +45,7 @@ class HipchatController < ApplicationController
 			        "send_message",
 			        "view_group"
 			      ],
-			      "fromName" => "Freshdesk"
+			      "fromName" => "onazar"
 			    },
 			    "installable" => {
 			    	"installedUrl" => "#{ENV['DOMAIN']}/config/new",

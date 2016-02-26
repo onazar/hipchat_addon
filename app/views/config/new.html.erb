@@ -51,7 +51,7 @@ jQuery(document).ready(function(){
 });
 <% end %> 
 
-<% form_for :config,:url => { :controller => "config", :action => "create" },:html => { :class => "form-horizontal" } do |f| -%>
+<% form_for :config,:url => { :controller => "config", :action => "create" },:html => { :class => "form-horizontal" } do |f| %>
 	<div class ="sign-in-form">
 
     <div class ="logo">
@@ -92,7 +92,7 @@ jQuery(document).ready(function(){
 				</div>
 				
 
-				<div class = " controls event ">
+				<div class = "controls event">
 					<div class ="ticket-create">
 						<span  class="tkt-prop pull-left">Ticket is created</span>
 						<div class="onoffswitch pull-left">
@@ -114,12 +114,13 @@ jQuery(document).ready(function(){
     					</label>
 						</div>
 					</div>
+        </div>
 
       </div>
       <div class ="move-button">
-      	<%= f.submit "Connect", :class => "button-Connect btn btn-inverse "%>
+      	<%= f.submit "Connect", :class => "button-Connect btn btn-inverse" %>
       </div>
     </div>
 	</div>
 
-<% end -%>
+<% end %>
